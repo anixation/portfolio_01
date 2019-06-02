@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	}
+	
+.clr{
+	clear:both;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+#top{
+	width:100%;
+	padding:0 10%;
+	background:rgba(0, 0, 0, .9);
+}
+
+#logo{
+	position:absolute;
+	top:0;
+	left:10%;
+	float:left;
+}
+
+#logo img{
+	box-shadow:0 5px 5px 0 rgba(0,0,0,.3), 0 5px 5px 0 rgba(0,0,0,.15);
+}
+
+#menu{
+	width:70%;
+	float:right;
+}
+
+#menu ul{
+	list-style-type:none;
+	text-align:right;
+}
+	
+#menu ul li{
+	display:inline-block;
+	padding:1% 0 1% 5%;
+}
+
+#menu ul li a{
+	text-decoration:none;
+	color:#fff;
+	text-transform:uppercase;
+}
+
+#menu ul li:hover a{
+	color:#ac7025;
+}
+
+#wrapper #top nav #menu ul li a span{
+	color:#ac7025;
+}
+
+#resnav{
+	display:none;
+}
+	
+#banner{
+	width:100%;
+	height:100%;
+	padding:5% 10%;
+	background-image:url(../images/banner.jpg);
+	background-size:100%;
+}
+
+#intro{
+	width:40%;
+	color:#fff;
+	float:left;
+	margin:10% 0 0 0;
+}
+
+#intro h1{
+	font-size:90%;
+}
+
+#wrapper #banner #intro span{
+	color:#ac7025;
+	font-size:200%;
+	line-height:160%;
+	text-shadow:#CCC;
+}
+
+#forma{
+	width:40%;
+	float:right;
+	background:rgba(0, 0, 0, .7);
+	padding:5%;
+}
+
+#forma form input[type="text"],
+#forma form input[type="email"]{
+	width:100%;
+	padding:4%;
+	border:1px solid #ac7025;
+	background:url(../images/text-bg.png);
+	color:#fff;
+}
+	
+#forma form select{
+	padding:4%;
+	border:1px solid #ac7025;
+	background:url(../images/text-bg.png);
+	color:#999;
+}
+
+#forma form input[type="date"]{
+	padding:1.5% 4%;
+	border:1px solid #ac7025;
+	background:url(../images/text-bg.png);
+	color:#999;
+}
+
+.rooms{
+	width:45%;
+}
+
+.dat{
+	width:30%;
+}
+
+.formmargin{
+	margin:3% 0;
+}
+
+.margintop{
+	margin-top:3%;
+}
+
+.datmargin{
+	margin-left:5%;}
+
+.fleft{
+	float:left;
+}
+
+.fright{
+	float:right;
+}
+
+#forma form input[type="submit"]{
+	width:40%;
+	padding:4%;
+	border:0;
+	margin:5% auto 0 auto;
+	background-color:#ac7025;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#000;
+	font-size:105%;
+}
+
+#forma form input[type="reset"]{
+	padding:4%;
+	border:1px solid #ac7025;
+	background:rgba(255,255,255);
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#000;
+	font-size:105%;
+}
+
+#feature{
+	width:100%;
+	padding:0 0 5% 0;
+	text-align:center;
+}
+
+#feature h1{
+	padding:5% 0;
+}
+
+.fbox{
+	width:25.5%;
+	display:inline-block;
+	position:relative;
+	margin-bottom:3.5%;
+}
+
+.boxcaption{
+	width:100%;
+	position:absolute;
+	bottom:0;
+	padding:2% 0;
+	color:#fff;
+	background:rgba(0, 0, 0, .5);
+	font-weight:bold;
+}
+
+.boxmargin{
+	margin-left:1.5%;
+}
+
+#footnav{
+	width:100%;
+	padding:5% 10%;
+	background-color:#db9f54;
+	text-align:left;
+}
+
+#footdesc{
+	width:50%;
+}
+
+#footnav h4{
+	padding:0 0 3% 0;
+	font-size:130%;
+}
+
+#footnav p{
+	font-size:90%;
+}
+
+#footlink{
+	width:15%;
+	padding:0 0 0 5%;
+}
+
+#footlink ul{
+	list-style-type:none;
+}
+
+#footlink ul li{
+	padding:5% 0;
+}
+
+#footlink ul li a{
+	text-decoration:none;
+	color:#000;
+}
+
+#footlink ul li a:hover{
+	color:#36caf0;
+	}
+
+#social{
+	width:30%;
+}
+
+#social ul{
+	list-style-type:none;
+	text-align:center;
+}
+
+#social ul li{
+	display:inline-block;
+	padding:0 5%;
+}
+
+#social ul li a{
+	text-decoration:none;
+}
+	
+#bottom{
+	width:100%;
+	text-align:center;
+	padding:2% 0;
+	background:#000;
+	color:#fff;
+}
+
+
+
+
+/* ========== Rooms & Tariff ========== */
+
+#rooms{
+	width:100%;
+	text-align:center;
+}
+
+.main{
+	width:80%;
+	padding:5% 0;
+	margin:0px auto;
+	color:#fff;
+}
+
+.roombox{
+	width:48%;
+	display:inline-block;
+	text-align:left;
+	margin-bottom:3.5%;
+}
+
+.roomcaption{
+	width:100%;
+	padding:1% 5%;
+	background:rgba(0, 0, 0, .5);
+}
+
+.roommargin{
+	margin:0 3% 0 0;
+}
+
+.roombox h2{
+	font-size:140%;
+}
+
+.roombox h3{
+	width:30%;
+	font-size:100%;
+	text-align:center;
+	background-color:#000;
+	padding:2%;
+}
+
+/* ========== Rooms & Tariff End ========== */
+
+
+
+/* ========== About Us ========== */
+
+#about{
+	text-align:center;
+	width:100%;
+}
+
+#about p{
+	text-align:left;
+	line-height:170%;
+	color:#333;
+}
+
+#about p span{
+	font-size:150%;
+	color:#ac7025;
+}
+
+/* ========== About Us End ========== */
+
+
+
+/* ========== Gallery ========== */
+
+.gallerybox{
+	width:31%;
+	margin-bottom:3%;
+	display:inline-block;
+}
+
+.gallerymargin{
+	margin-left:3%;
+}
+
+/* ========== Gallery End ========== */
+
+
+
+
+/* ========== Contact ========== */
+
+#contact{
+	text-align:center;
+}
+
+#gmap{
+	width:55%;
+}
+
+#formb{
+	width:40%;
+	margin:0px auto;
+	font-size:130%;
+	color:#333;
+	text-align:left;
+}
+
+#formb form input[type="text"]{
+	width:100%;
+	padding:1% 0;
+}
+
+#formb form textarea{
+	width:100%;
+	height:150px;
+	padding:1% 0;
+}
+
+#formb form input[type="submit"]{
+	border:0;
+	padding:1% 5%;
+}
+
+
+/* ========== Contact End ========== */
