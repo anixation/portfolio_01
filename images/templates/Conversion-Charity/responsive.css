@@ -1,0 +1,531 @@
+@media screen and (max-width:480px) {
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	text-align:center;
+	font-family:Century Gothic;
+}
+
+#wrapper{
+	height:auto;
+	width:100%;
+	background-image:url('images/background.gif');
+}
+
+
+#line{
+	height:auto;
+	width:100%;
+}
+
+#header{
+	height:auto;
+	width:100%;
+	margin:0px auto;
+}
+
+
+#logo{
+	height:auto;
+	width:90%;
+	float:none;
+}
+
+#logo img{	
+	padding:10% 0;
+}
+
+
+#social{
+	height:auto;
+	width:96%;
+	float:none;
+	padding:5% 2%;
+}
+
+#twitter{
+	height:auto;
+	width:28%;
+	float:left;
+}
+
+#twitter img{
+	padding:0;
+}
+
+#messbox{
+	height:auto;
+	width:65%;
+	background-image:url('images/messbox.png');
+	background-repeat: no-repeat;
+	background-position:0px 0px;
+	background-size:100%;
+	text-align:center;
+	padding:5% 0;
+	margin:6% 0 0 0;
+	float:right;
+}
+
+#messbox p{
+	font-family:Century Gothic;
+	font-size:80%;
+	padding:0 0 0 10%;
+}
+
+#messbox p a{
+	text-decoration:none;
+	color:#7edbfd;
+}
+
+#messbox p a:hover{
+	text-decoration:underline;
+}
+
+#main{
+	height:auto;
+	width:95%;
+	margin:0px auto;
+	background-color:white;
+	border-radius:7px;
+}
+
+#mainnav{
+	height:auto;
+	width:98%;
+	padding:1% 0;
+	margin:0px auto;
+	border-radius:7px;
+}
+
+#nav{
+	height:auto;
+	width:100%;
+	margin:0px auto;
+	background-color:#f5fbfd;
+	border-radius:7px;
+}
+
+#nav ul{
+	list-style-type: none;
+	text-align:left;
+	color:#86b4d9;
+}
+
+
+#nav ul li{
+	height:auto;
+	display:block;
+	text-align:center;
+	padding:3% 0;
+}
+
+#nav ul li a{
+	text-decoration:none;
+	font-size:100%;
+	color:#76d6f9;
+}
+
+#nav ul li:hover{
+	background-color:#76d6f9;
+}
+
+#nav ul li:hover a{
+	color:#fff;
+}
+
+.act{
+	color:#fff;
+}
+
+.actli{
+	border-radius:7px 7px 0px 0px;
+	background-color:#76d6f9;
+}
+
+.bor{
+	border-right:0px;
+	border-bottom:5px solid #76d6f9;
+}
+
+.last{
+	border-radius:0 0 7px 7px;
+}
+
+#banner{
+	display:none;
+	height:auto;
+	width:98%;
+	background-image:url('images/Template-Charity_11.jpg');
+	background-size:100%;
+	margin:0px auto;
+}
+
+#bannertxt{
+	height:auto;
+	width:30%;
+	text-align:left;
+	float:right;
+	padding:.5% 1% 5% 10%;
+}
+
+#bannertxt h1{
+	width:75%;
+	color:#fff;
+	font-size:50%;
+	padding:20% 5%;
+	margin:0 0 0 8%;
+	background-image:url('images/Template-Charity_12.gif');
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+#bannertxt h2{
+	color:#fc8a58;
+	font-size:60%;
+	padding:3% 0 0 5%;
+}
+#bannertxt p{
+	display:none;
+	color:#95bdde;
+	font-size:90%;
+	line-height:24px;
+	padding:5% 0 15% 5%;
+}
+
+.button {
+    background-color: #7cd9fc;
+    border: none;
+    color: white;
+    padding: 4%;
+    text-align: center;
+	border-radius: 5px;
+    text-decoration: none;
+    font-size: 55%;
+    cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#moto{
+	height:auto;
+	width:98%;
+	margin:0px auto;
+	padding-top:5%;
+}
+#mission{
+	height:auto;
+	width:94%;
+	padding:3% 3% 10% 3%;
+	float:none;
+	background-color:#c2d007;
+	border-radius: 7px;
+}
+
+#moto img{
+	float:left;
+}
+
+#mission h1{
+	width:40%;
+	color:white;
+	font-size:135%;
+	text-align:left;
+	margin-left:5%;
+	float:left;
+}
+#mission p{
+	width:95%;
+	text-align:justify;
+	color:white;
+	font-size:90%;
+}
+
+#donation{
+	height:auto;
+	width:94%;
+	padding:3% 3% 10% 3%;
+	margin:5% 0;
+	float:none;
+	background-color:#7cd9fc;
+	border-radius: 7px;
+}
+#donation h1{
+	width:40%;
+	color:white;
+	font-size:135%;
+	text-align:left;
+	margin-left:5%;
+	float:left;
+}
+#donation p{
+	width:95%;
+	text-align:left;
+	color:white;
+	font-size:90%;
+}
+#program{
+	height:auto;
+	width:94%;
+	padding:3% 3% 10% 3%;
+	float:none;
+	background-color:#fb8856;
+	border-radius: 7px;
+}
+
+#program h1{
+	width:40%;
+	color:white;
+	font-size:135%;
+	text-align:left;
+	margin-left:5%;
+	float:left;
+}
+#program p{
+	width:95%;
+	text-align:left;
+	color:white;
+	font-size:90%;
+}
+
+#services{
+	height:auto;
+	width:98%;
+	margin:0px auto;
+	padding:5% 0; 
+	text-align:left;
+	border-bottom:2px solid #f5fafd;
+}
+/* #services button {
+    background-color: #7cd9fc;
+    border: none;
+    color: white;
+    padding: 14px 12px;
+    text-align: center;
+	border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 25px 2px;
+    cursor: pointer;
+} */
+#about{
+	height:auto;
+	width:94%;
+	padding:5% 3%;
+	float:none;
+}
+.colour{
+	color:#c2d007;
+	font-size:105%;
+}
+#about h1{
+	color:#86b4d9;
+	font-size:180%;
+	padding:7% 0;
+	border-bottom:2px solid #cdecf5;
+	border-top:2px solid #cdecf5;
+	text-align:center;
+}
+#about p{
+	color:#86b4d9;
+	text-align:justify;
+	font-size:90%;
+	line-height:16px;
+	padding-top:2%;
+}
+
+
+#events{
+	height:auto;
+	width:94%;
+	padding:5% 3%;
+	margin-left:0;
+	float:none;
+}
+#events h1{
+	color:#86b4d9;
+	font-size:180%;
+	padding:7% 0;
+	border-bottom:2px solid #cdecf5;
+	border-top:2px solid #cdecf5;
+	text-align:center;
+}
+
+#events p{
+	color:#86b4d9;
+	text-align:left;
+	font-size:90%;
+	line-height:16px;
+	padding-top:2%;
+}
+
+#events .colour{
+	color:#7cd9fc;
+	font-size:100%;
+	padding-top:5%;
+}
+
+#eveone{
+	padding-bottom:8%;
+	border-bottom:2px dashed #cdecf5;
+}
+#evetwo{
+	padding-bottom:8%;
+	border-bottom:2px dashed #cdecf5;
+}
+
+#evethree{
+	padding-bottom:8%;
+	border-bottom:2px dashed #cdecf5;
+}
+
+#evebutt{
+	padding-top:13%;
+}
+
+#news{
+	height:auto;
+	width:94%;
+	padding:5% 3%;
+	float:none;
+	font-size:90%;
+}
+
+#news h1{
+	color:#86b4d9;
+	font-size:180%;
+	padding:7% 0;
+	border-bottom:2px solid #cdecf5;
+	border-top:2px solid #cdecf5;
+	text-align:center;
+}
+
+#newsone{
+	padding:10% 0;
+	border-bottom:2px dashed #cdecf5;
+}
+
+#nimgone{
+	width:33%;	
+	float:left;
+	padding-top:1%;
+}
+
+#ntxtone{
+	width:65%;
+	float:right;
+	padding-left:1%;
+}
+
+#news img{
+	width:100%;
+}
+
+#news p{
+	font-size:90%;
+	text-align:justify;
+	line-height:14px;
+}
+
+#news .p{
+	color:#fb8856;
+	font-size:100%;
+}
+
+#newstwo{
+	padding:10% 0;
+	border-bottom:2px dashed #cdecf5;
+}
+
+#nimgtwo{
+	width:33%;	
+	float:left;
+	padding-top:1%;
+}
+
+#ntxttwo{
+	width:65%;
+	float:right;
+	padding-left:1%;	
+}
+
+#newsbutt{
+	padding-top:13%;
+}
+
+#navfooterm{
+	width:70%;
+	margin:0px auto;
+	padding-top:5%;
+	background-color:white;
+}
+
+#navfooter{
+	width:100%;
+	margin:0px auto;
+}
+
+#navfooter ul{
+	list-style-type: none;
+}
+
+#navfooter li{
+	display:block;
+	font-size:90%;
+	text-align:center;
+	padding:1% 3%;
+	margin:0px auto;
+	background-color:white;
+}
+
+#navfooter ul li a{
+	text-decoration:none;
+	color:#86b4d9;
+}
+
+#navfooter ul li:hover{
+	background-color:#86b4d9;
+}
+
+#navfooter ul li:hover a{
+	color:#fff;
+}
+
+.fbor{
+	border-right:0;
+}
+
+#footer{
+	width:98%;
+	text-align:center;
+	font-size:80%;
+	color:#7cd9fc;
+	margin:7% 0;
+}
+
+}
