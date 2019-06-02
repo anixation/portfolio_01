@@ -1,0 +1,1334 @@
+@media screen and (min-width:481px) and (max-width:960px) {
+
+/* ==================== BASIC ==================== */
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family:'entypo',sans-serif;
+}
+
+
+@font-face {
+    font-family: 'futura_md_btbold';
+    src: url('../font/ufonts.com_futura-bold-bt-webfont.eot');
+    src: url('../font/ufonts.com_futura-bold-bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/ufonts.com_futura-bold-bt-webfont.woff2') format('woff2'),
+         url('../font/ufonts.com_futura-bold-bt-webfont.woff') format('woff'),
+         url('../font/ufonts.com_futura-bold-bt-webfont.ttf') format('truetype'),
+         url('../font/ufonts.com_futura-bold-bt-webfont.svg#futura_md_btbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	font-family: 'futura_md_btbold';
+	color:white;
+	text-align:center;
+	background-color:#3c5499;
+}
+
+h1{
+	font-size:45px;
+	text-align:center;
+	color:white;
+	padding:0 0 5% 0;
+}
+
+.clr{
+	clear:both;
+}
+
+.innerdiv{
+	width:80%;
+	margin:0px auto;
+}
+
+#wrapper{
+	width:100%;
+	height:auto;
+	font-family: 'futura_md_btbold';
+}
+
+#workwrapper{
+	padding:8% 0 0 0;
+	background-color:#000;
+}
+
+/* ==================== BASIC END ==================== */
+
+
+
+
+/* ==================== HEADER SECTION ==================== */
+#top{
+	width:100%;
+	position:fixed;
+	z-index:2;
+}
+
+#mainnav{
+	background-color:#3c5499;
+	height:50px;
+}
+
+#mainnav img{
+	width:100%;
+	padding-top:.5%;
+	margin:0px auto;
+}
+
+#wrapper header #top #mainnav .logoa{
+	width:40px;
+	margin-top:1%;
+}
+
+#top .navlabel{
+	margin:.5%;
+	text-decoration:underline;
+	cursor:default;
+}
+
+#menu ul{
+	list-style-type:none;
+}
+
+#menu ul li{
+	display:block;
+	padding:2%;
+}
+
+#menu ul li a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 22px;
+}
+
+#menu ul li a:hover{
+	color:#fdbd2f;
+	font-size: 22px;
+	text-decoration:underline;
+}
+
+.act{
+	color:#fdbd2f;
+	font-size: 24px;
+}
+
+#wrapper header #top #mainnav #menu nav ul li .services ul li,
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul li .services ul li {
+	display: inline-block;
+}
+
+#wrapper header #top #mainnav #menu nav ul .navlabel {
+	color: #fff;
+}
+
+#wrapper header #top #mainnav #menu nav ul li .services ul li{
+	margin:3%;
+}
+
+#wrapper header #top #mainnav #menu nav ul li .services ul li a{
+	color: #fdbd2f;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1em;
+}
+
+#wrapper header #top #mainnav #menu nav ul li .services ul li a div:hover{
+	background-color:#fdbd2f;
+}
+
+#wrapper header #top #mainnav #menu nav ul li .services ul li a div {
+	background-color: #fff;
+}
+
+
+/* ----- Resume Button Effect ----- */
+
+#resumebut button{
+	width:80px;
+	height:50px;
+	border:0;
+	border-radius:5px;
+	margin:3% auto;
+	background-color: #fff;
+	color:#000;
+	font-size:12px;
+	transition: all 0.7s ease;
+}
+
+#resumebut button:hover{
+	width:50px;
+	transform: rotate(360deg);
+	border-radius:100%;
+	background-color:#fdbd2f;
+	box-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+#resumebut button:hover .txt, .image{
+	display:none;
+	
+}
+
+#resumebut button:hover .image, .txt{
+	display:block;
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul li #resumebut button .image img,
+#wrapper header #top #mainnav #menu nav ul li #resumebut button .image img {
+	width: 50%;
+}
+
+/* ----- Resume Button Effect END ----- */
+
+
+
+/* ----- Main Navigation ----- */
+
+.menu-collapsed {
+  transition: all .25s;
+  position: fixed;
+  top: 10px;
+  left: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer;
+}
+.menu-collapsed ul {
+  transition: all .05s;
+  position: fixed;
+  left: -9000px;
+}
+
+.bar {
+  position: fixed;
+  left: 10px;
+  top: 22px;
+  height: 4px;
+  width: 25px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.bar:before {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  height: 4px;
+  width: 25px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.bar:after {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  height: 4px;
+  width: 25px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.menu-expanded {
+  transition: all .25s;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.menu-expanded ul {
+  transition: all .05s;
+  position: relative;
+  left: 0;
+  z-index: 2;
+}
+.menu-expanded a {
+  transition: all .15s;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  padding: 5px;
+}
+.menu-expanded a:hover {
+  transition: all .15s;
+  letter-spacing: 2px;
+}
+.menu-expanded .bar {
+  background-color: transparent;
+  transition: all .25s;
+}
+.menu-expanded .bar:before {
+  transition: all .25s;
+  content: "";
+  transform: rotate(45deg);
+  top: -0px;
+}
+.menu-expanded .bar:after {
+  transition: all .25s;
+  content: "";
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+/* ----- Main Navigation END ----- */
+
+
+
+/* ------ Work Navigation ----- */
+
+/* Overlay style */
+
+#worknav{
+	position:absolute;
+	top:5px;
+	right:10px;
+	color:#fff;
+}
+
+#worknav button{
+	width:40px;
+	height:40px;
+	border:0;
+	background-color: #fff;
+	font-size:9px;
+	color:#3c5499;
+}
+
+#worknav button:hover{
+	background-color:#fdbd2f;
+	color:#fff;
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul .navlabel{
+	text-decoration:underline;
+	color:#fff;
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fdbd2f;
+	z-index:3;
+}
+
+/* Overlay closing cross */
+#wrapper header #top #mainnav .overlay.overlay-cornershape .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 10px;
+  	top: 12px;
+	overflow: hidden;
+	border: none;
+	background: url(../images/cross.png) no-repeat top right;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+}
+
+/* Menu style */
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav {
+	text-align: center;
+	position: relative;
+	top: 33%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul {
+	list-style-type:none;
+	height: 100%;
+	position: relative;
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul li {
+	display: block;
+	padding:2%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 22px;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul li a:hover,
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul li a:focus {
+	color:#fdbd2f;
+	font-size: 22px;
+	text-decoration:underline;
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul li .services ul li a{
+	text-decoration:none;
+	font-size:1em;
+}
+
+#wrapper header #top #mainnav .overlay.overlay-cornershape nav ul li .services ul li{
+	margin:1%;
+}
+
+/* Effects */
+.overlay-cornershape {
+	background: transparent;
+	visibility: hidden;
+	-webkit-transition: visibility 0s 0.5s;
+	transition: visibility 0s 0.5s;
+}
+
+.overlay-cornershape.open {
+	visibility: visible;
+	-webkit-transition: none;
+	transition: none;
+}
+
+.overlay-cornershape svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.overlay-cornershape .overlay-path {
+	fill: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-cornershape nav,
+.overlay-cornershape .overlay-close {
+	opacity: 0;
+	-webkit-transition: opacity 0.4s 0.4s;
+	transition: opacity 0.4s 0.4s;
+}
+
+.overlay-cornershape.open nav,
+.overlay-cornershape.open .overlay-close {
+	opacity: 1;
+	-webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.overlay-cornershape.close nav,
+.overlay-cornershape.close .overlay-close {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+/* ----- Work Navigation END ----- */
+
+
+/* ----- Work Button Morph Effect ----- */
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/* ----- Work Button Effect END ----- */
+
+/* ==================== HEADER SECTION END ==================== */
+
+
+
+
+
+
+/* ==================== BANNER SECTION ==================== */
+
+#banner{
+	width:100%;
+	height:auto;
+	padding:25% 0 10% 0;
+	background-color:#3c5499;
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+}
+
+.img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  z-index: 1;
+  display:none;
+}
+
+.img-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display:none;
+}
+
+.img-3 {
+  position: absolute;
+  top: 0;
+  right: 35%;
+  bottom: auto;
+  left: auto;
+  display:none;
+}
+
+#logo{
+	width:100%;
+	height:auto;
+}
+
+#logo img{
+	width:60%;
+}
+
+#intro{
+	width:100%;
+	height:auto;
+	margin:0px auto;
+	padding:5% 0;
+}
+
+#intro a{
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1em;
+	/*border-bottom:1px solid orange;
+	border-top:1px solid orange;*/
+}
+
+#intro a:hover{
+	border:none;
+}
+
+#contactlink{
+	width:25%;
+	height:auto;
+	float:left;
+	display:none;
+}
+
+
+#info{
+	width:100%;
+	height:auto;
+	float:none;
+}
+
+#info h1{
+	font-size:100%;
+	line-height:140%;
+	text-transform:uppercase;
+}
+
+#projectlink{
+	width:100%;
+	height:auto;
+	padding:5% 0;
+	display:block;
+}
+
+
+#worklink{
+	width:25%;
+	height:auto;
+	float:right;
+	display:none;
+}
+
+
+/* ----- Banner Link Effect ----- */
+
+.naveffect a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.naveffect a::before,
+.naveffect a::after {
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: orange;
+	content: '';
+	opacity: 0.5;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.naveffect a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.naveffect a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.naveffect a:hover::before,
+.naveffect a:hover::after,
+.naveffect a:focus::before,
+.naveffect a:focus::after {
+	opacity: 1;
+}
+
+.naveffect a:hover::before,
+.naveffect a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.naveffect a:hover::after,
+.naveffect a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+
+/* ----- Banner Link Effect END ----- */
+
+/* ==================== BANNER SECTION END ==================== */
+
+
+
+/* ==================== PROJECT SECTION ==================== */
+
+#project{
+	width:100%;
+	background-color:#f9f9f9;
+	padding:5% 0;
+}
+
+#project h1{
+	color:#333;
+}
+
+#screenshot{
+	width:100%;
+	float:none;
+}
+
+#prodesc{
+	width:100%;
+	float:none;
+	padding:1% 3% 0 3%;
+	text-align:left;
+}
+
+#prodesc h2{
+	color:#333;
+	font-size:110%;
+	padding-bottom:2%;
+}
+
+#prodesc p{
+	color:#787878;
+	font-size:90%;
+	padding-bottom:8%;
+	line-height:18px;
+}
+
+#prodesc button img{
+	width:50%;
+}
+
+#prodesc button:hover{
+	background-color:#fdbd2f;
+}
+
+.procolor{
+	color:#fdbd2f;
+	text-shadow:0px 1px 0px #999;
+}
+
+#probut button{
+	width:100px;
+	height:50px;
+	border:0;
+	border-radius:5px;
+	margin:3% auto;
+	background-color: #333;
+	color:#fff;
+	font-size:12px;
+	transition: all 0.7s ease;
+}
+
+
+#probut button:hover{
+	width:50px;
+	transform: rotate(360deg);
+	border-radius:100%;
+	background-color:#fdbd2f;
+	box-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+#probut button:hover .txt, .image{
+	display:none;
+	
+}
+
+#probut button:hover .image, .txt{
+	display:block;
+}
+/* ==================== PROJECT SECTION END ==================== */
+
+
+
+/* ==================== WORK SECTION ==================== */
+
+#work{
+	width:100%;
+	background-color:#3c5499;
+	padding:5% 0 10% 0;
+}
+
+#work a{
+	text-decoration:none;
+}
+
+/* ----- Work Effect ----- */
+
+.circlemargin{
+	margin:0 0 0 0;
+}
+
+.main{
+	display:block;
+	margin:5% auto;
+}
+
+.circle {
+	background: #333;
+	border-radius: 100%;
+	cursor: pointer;
+	position: relative;
+	margin: 1% auto;
+	width: 13em; height: 13em;
+	overflow: hidden;
+	-webkit-transform: translateZ(0);
+	   -moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+			transform: translateZ(0);
+}
+
+.circle h2 {
+	color: #fff;
+	font-weight: 900;
+	font-size: 1.1em;
+	line-height: 12em;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+	-webkit-transition: color 0.8s ease-in-out;
+	   -moz-transition: color 0.8s ease-in-out;
+		-ms-transition: color 0.8s ease-in-out;
+			transition: color 0.8s ease-in-out;
+}
+
+.circle:before,
+.circle:after {
+	border-radius: 100%;
+	content:"";
+	position: absolute;
+	top: 0; left: 0;
+	width: inherit; height: inherit;
+	box-shadow: inset 10.6em 0 0 rgba(0,0,0, 0.2),
+				inset 0 10.6em 0 rgba(0,0, 0, 0.2),
+				inset -10.6em 0 0 rgba(0,0,0, 0.2),
+				inset 0 -10.6em 0 rgba(0,0, 0, 0.2);
+				
+	-webkit-transition: box-shadow 0.75s;
+	   -moz-transition: box-shadow 0.75s;
+		-ms-transition: box-shadow 0.75s;
+			transition: box-shadow 0.75s;
+}
+
+.circle:after {
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+			transform: rotate(45deg);
+}
+
+.circle:hover:before,
+.circle:hover:after {
+	box-shadow: inset 0.86em 0 0 rgba(255, 165, 0, 0.5),
+				inset 0 0.86em 0 rgba(255, 165, 0, 0.5),
+				inset -0.86em 0 0 rgba(255, 165, 0, 0.5),	
+				inset 0 -0.86em 0 rgba(255, 165, 0, 0.5);
+}
+
+.circle:hover > h2 {
+	color: #fdbd2f;
+}
+
+.circle:hover{
+	background-color:#000;
+}
+
+/* ----- Work Effect END ----- */
+
+/* ==================== WORK SECTION END ==================== */
+
+
+
+
+
+/* ==================== CONTACT SECTION ==================== */
+
+#contact{
+	width:100%;
+	height:auto;
+	background-color:#000;
+	padding:5% 0 0 0;
+}
+
+#contact h1{
+	color:#fff;
+	padding-bottom:1%;
+}
+
+#conleft{
+	width:100%;
+	height:auto;
+	float:none;
+	padding:5% 0 10% 0;
+	margin:1% 0 0 0;
+	border-right:0;
+}
+
+#conleft h2{
+	font-size:120%;
+	text-align:center;
+	color:orange;
+	padding:0 0 1% 0;
+}
+
+#conleft p{
+	font-size:85%;
+	text-align:center;
+	color:#fff;
+	line-height:130%;
+	padding:.5% 0 12% 0;
+}
+
+#conleft p a{
+	text-decoration:none;
+	color:#fff;
+}
+
+#conleft p a:hover{
+	text-decoration:underline;
+}
+
+#conright{
+	width:100%;
+	height:auto;
+	float:none;
+	margin:1% 0 0 0;
+	padding:10% 0 10% 0;
+	font-size: 130%;
+}
+
+#conright h2{
+	font-size:80%;
+	line-height:100%;
+	text-align:center;
+	color:orange;
+	padding:0 0 1% 0;
+}
+
+#formmain{
+	width:80%;
+	margin:0px auto;
+}
+
+#contact ul li a{
+	text-decoration:none;
+}
+
+
+/* ----- Social Icon Effect ----- */
+
+.services {
+  text-align: center;
+  transform: translatez(0);
+}
+
+.services li {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 2% .5%;
+  list-style: none;
+}
+.services li div {
+  width: 50px;
+  height: 50px;
+  color: #fdbd2f;
+  font-size: 200%;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+.services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+  color:#fff;
+  background-color:#fdbd2f;
+}
+
+/* ----- Social Icon Effect END ----- */
+
+
+/* ----- Form Effect ----- */
+
+.input {
+	position: relative;
+	display: block;
+	margin: 1%;
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #aaa;
+	font-weight: 400;
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.graphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+}
+
+::-webkit-input-placeholder{
+	font-size:14px;
+}
+
+input[type='submit']{
+	margin:15% auto;
+	width:90px;
+	height:50px;
+	border:0;
+	background-color: #fff;
+	color:#fdbd2f;
+	font-size:12px;
+	transition: all 0.5s ease;
+}
+
+input[type='submit']:hover{
+	width:60px;
+	height:60px;
+	color:#fff;
+	transform: rotate(360deg);
+	border-radius:100%;
+	background-color:#fdbd2f;
+	box-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+/* Form Style */
+
+.input--nao {
+	overflow: hidden;
+	padding-top: 1em;
+	font-size:.85em;
+}
+
+.input__field--nao {
+	padding: 0.5em 0em 0.25em;
+	width: 100%;
+	background: transparent;
+	color: #fff;
+	font-size: 1.25em;
+}
+
+.graphic--nao {
+	stroke:orange;
+	pointer-events: none;
+	-webkit-transition: -webkit-transform 0.7s, stroke 0.7s;
+	transition: transform 0.7s, stroke 0.7s;
+	-webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+	transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+} 
+
+.input__field--nao:focus + .input__label--nao,
+.input--filled .input__label--nao {
+	color: #fdbd2f;
+	-webkit-transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1);
+	transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1);
+}
+
+.input__field--nao:focus ~ .graphic--nao,
+.input--filled .graphic--nao {
+	stroke: #fff;
+	-webkit-transform: translate3d(-66.6%, 0, 0);
+	transform: translate3d(-66.6%, 0, 0);
+}
+
+/* ----- Form Effect END ----- */
+
+
+/* ==================== CONTACT SECTION END ==================== */
+
+
+
+
+/* ==================== FOOTER SECTION ==================== */
+
+#copy{
+	width:100%;
+	height:auto;
+	background-color:#3c5499;
+	padding:4% 0;
+}
+
+#copy h2{
+	font-size:100%;
+	text-align:center;
+	color:#fff;
+}
+
+#copy h2 span{
+	color:#fdbd2f;
+}
+
+/* ----- Back to Top ----- */
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius:100%;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(255, 165, 0, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #fdbd2f;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 55px;
+    width: 55px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+/* ----- Back to Top ----- */
+
+
+/* ==================== FOOTER SECTION END ==================== */
+
+
+/*============================================================================================================================================*/
+
+
+
+
+
+
+/* ==================== WORK PAGE CSS ==================== */
+
+
+/* ----- Work Page Box Effect ----- */
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+
+figcaption,figure{
+	display:block;
+}
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	margin: 15px auto;
+	min-width: 280px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 20%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+/* Box Effect */
+
+
+figure.box_effect {
+	background: #000;
+}
+
+figure.box_effect img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.box_effect figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.box_effect p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 3em;
+	padding: 0 1em;
+	max-width: 150px;
+	border-right: 4px solid #fff;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.box_effect h3 {
+	text-align: left;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.box_effect:hover img {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.box_effect:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.box_effect:hover p, figure.box_effect:hover h3 {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+/* ----- Work Page Box Effect END ----- */
+
+/* ==================== WORK PAGE CSS END ==================== */
+
+
+
+}
